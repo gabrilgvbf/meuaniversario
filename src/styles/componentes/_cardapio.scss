@@ -1,0 +1,66 @@
+.square-top {
+    height: 60px;
+    width: 100%;
+    background-color: #FD614A;
+    text-align: center;
+
+    h3 {
+        padding: 1em;
+        font-size: 2em;
+        color: #fff;
+        font-family: 'Lilita One', cursive;
+        letter-spacing: 0.5em;
+        text-transform: uppercase;
+    }
+
+}
+
+.cardapio {
+
+    &__conteudo {
+
+
+        ul {
+
+            li:nth-child(1) {
+
+                background-image: linear-gradient(#fd614a, #f79b8d);
+            }
+
+            li:nth-child(2) {
+
+                background-image: linear-gradient(#f79b8d, #f79b8d);
+            }
+
+            li:nth-child(3) {
+
+                background-image: linear-gradient(#f79b8d, #ffeeab);
+            }
+
+            li:nth-child(4) {
+
+                background-image: linear-gradient(#ffeeab, #f8af11);
+            }
+
+            li {
+                padding: 1.5em 0;
+
+
+                img {
+                    width: 30em;
+                    display: block;
+                    margin: 0 auto;
+                    border-radius: 30px;
+
+                    @media(max-width:768px) {
+
+                        width: 20em;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+}

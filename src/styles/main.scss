@@ -1,0 +1,80 @@
+@use "componentes/button";
+@use "componentes/cardapio";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    font-family: sans-serif;
+}
+
+p {
+    color: #fff;
+    font-family: 'Lilita One', cursive;
+    font-size: 2em;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+
+    @media(max-width:768px) {
+        font-size: 1em;
+    }
+}
+
+
+
+body {
+    max-width: 100vw;
+
+
+    header {
+        padding: 24px;
+        height: 600px;
+        background-image: url(../images/dog.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        @media(max-width:768px) {
+            width: 100%;
+            background-image: none;
+            background-color: #e7b100;
+
+            .data-evento {
+                width: 50%;
+            }
+
+            ul {
+                display: block;
+                justify-content: none;
+            }
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                display: flex;
+                font-size: 36px;
+                align-items: center;
+                list-style: none;
+                border-bottom: solid 4px transparent;
+                transition: ease .3s;
+
+                &:hover {
+                    border-bottom: solid 4px #FD614A;
+
+                }
+            }
+
+            .button {
+                position: relative;
+                top: 30px;
+            }
+
+        }
+
+    }
+
+}

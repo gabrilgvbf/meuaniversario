@@ -1,0 +1,21 @@
+.button {
+    background-color: #FD614A;
+    padding: 10px;
+    color: aliceblue;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: ease .3s;
+
+    &:hover {
+        background-color: azure;
+        color: #FD614A;
+        transition: ease .3s;
+    }
+
+
+    @media(max-width:768px) {
+        display: none;
+    }
+}
